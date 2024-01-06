@@ -1,13 +1,20 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // const lowWord = word.toLowerCase();
+  return word.toLowerCase() === word.toLowerCase().split("").toReversed().join("") ? true : false;
 }
+console.log(isPalindrome("Cat"))
+console.log(isPalindrome("racecar"))
+
 
 /* 
-  Add your pseudocode here
+Declare function taking in a string
+    check string.toLowerCase() value against string .toReverse().join()
+    If true, return true
 */
 
 /*
-  Add written explanation of your solution here
+  Returned Ternary Expression - .split and .toReversed and .join
+      to compare the inputted value against the reversed value
 */
 
 // You can run `node index.js` to view these console logs
