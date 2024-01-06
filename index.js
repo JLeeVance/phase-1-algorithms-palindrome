@@ -2,7 +2,7 @@ function isPalindrome(word) {
   // const lowWord = word.toLowerCase();
   return word.toLowerCase() === word.toLowerCase().split("").toReversed().join("") ? true : false;
 }
-console.log(isPalindrome("Cat"))
+console.log(isPalindrome("rubber"))
 console.log(isPalindrome("racecar"))
 
 
@@ -27,6 +27,14 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("a"))
+
+
+
+
+
 }
 
 module.exports = isPalindrome;
